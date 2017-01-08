@@ -1,4 +1,5 @@
 config.php
 data/*
 .svn
-files/*
+files
+files2
