@@ -18,11 +18,11 @@ function ft_settings_external_load() {
   $ft["settings"]["DIRPERMISSION"]     = 0777; // Permission for newly created folders.
   $ft["settings"]["LOGIN"]             = FALSE; // Set to FALSE if you want to disable password protection.
   $ft["settings"]["UPLOAD"]            = TRUE; // Set to FALSE if you want to disable file uploads.
-  $ft["settings"]["CREATE"]            = TRUE; // Set to FALSE if you want to disable file/folder/url creation.
-  $ft["settings"]["FILEACTIONS"]       = TRUE; // Set to FALSE if you want to disable file actions (rename, move, delete, edit, duplicate).
+  $ft["settings"]["CREATE"]            = FALSE; // Set to FALSE if you want to disable file/folder/url creation.
+  $ft["settings"]["FILEACTIONS"]       = FALSE; // Set to FALSE if you want to disable file actions (rename, move, delete, edit, duplicate).
   $ft["settings"]["HIDEFILEPATHS"]     = FALSE; // Set to TRUE to pass downloads through File Thingie.
   $ft["settings"]["DELETEFOLDERS"]     = TRUE; // Set to TRUE to allow deletion of non-empty folders.
-  $ft["settings"]["SHOWDATES"]         = TRUE; // Set to a date format to display last modified date (e.g. 'Y-m-d'). See http://dk2.php.net/manual/en/function.date.php
+  $ft["settings"]["SHOWDATES"]         = FALSE; // Set to a date format to display last modified date (e.g. 'Y-m-d'). See http://dk2.php.net/manual/en/function.date.php
   $ft["settings"]["FILEBLACKLIST"]     = "ft2.php ft.css config.php index.php config.sample.php LICENSE README.markdown .DS_store .gitignore"; // Specific files that will not be shown.
   $ft["settings"]["FOLDERBLACKLIST"]   = "plugins js css locales data"; // Specifies folders that will not be shown. No starting or trailing slashes!
   $ft["settings"]["FILETYPEBLACKLIST"] = "php phtml php3 php4 php5"; // File types that are not allowed for upload.
